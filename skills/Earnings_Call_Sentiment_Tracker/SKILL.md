@@ -206,19 +206,6 @@ Produce **3–5 bullet points** covering:
 
 ---
 
-## Guardrails & Best Practices
-
-| Rule | Rationale |
-|------|-----------|
-| Require ≥ 4 data points before drawing trend conclusions | Avoids false signals from sparse data |
-| Flag any single-quarter move > 0.20 | Likely event-driven (M&A, one-time charge, CEO change) rather than organic |
-| Always report statement counts alongside scores | A 0.85 score on 50 statements is less reliable than on 400+ |
-| Do not attribute causation to sentiment alone | Sentiment is a signal, not a forecast — pair with fundamentals |
-| Validate all filter values via `pronto_mcp_getFilterOptions` before use | Prevents silent empty results from invalid enum values |
-| Use `dateRange` with capital `M` for months | Lowercase `m` = minutes in Elasticsearch date math |
-
----
-
 ## Tool Reference
 
 | Tool | Purpose | Key Parameters |
