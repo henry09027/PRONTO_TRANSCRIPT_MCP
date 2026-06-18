@@ -115,7 +115,7 @@ Organize results into a time-series with derived fields:
 
 ### Step 4 — Generate Chart
 
-Produce a **line chart** with the following specifications:
+Render a line chart using Cortex Charts (Snowflake native charting) with the following specifications:
 
 | Element | Specification |
 |---------|---------------|
@@ -138,37 +138,6 @@ Produce **3–5 bullet points** covering:
 3. **Trough sentiment** — date, score, and likely business driver
 4. **Recent trajectory** — last 2–3 quarters momentum
 5. **Notable pattern** — cyclicality, structural shifts, or peer divergence
-
----
-
-## Output Format
-
-```text
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📊 EARNINGS CALL SENTIMENT REPORT
-   [Entity Name] | [Scope] | [Timeframe]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-[TIME SERIES CHART]
-
-━━━ KEY FINDINGS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-• [Trend direction summary]
-• [Peak: date, score, catalyst]
-• [Trough: date, score, catalyst]
-• [Recent momentum]
-• [Forward-looking signal or risk flag]
-
-━━━ DATA TABLE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-| Period | Date | Score | +Stmt | -Stmt | QoQ Δ |
-|--------|------|-------|-------|-------|-------|
-| ...    | ...  | ...   | ...   | ...   | ...   |
-
-(Last 8 quarters unless full history requested)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
 
 ---
 
@@ -234,18 +203,6 @@ Produce **3–5 bullet points** covering:
 - Gauge regional business confidence for cross-border allocation decisions
 - Identify country-level sentiment divergences that precede relative equity performance
 - Correlate with macro factors (FX, trade policy, central bank stance)
-
----
-
-## Interpretation Guide
-
-| Score Range | Label | Typical Characteristics |
-|:-----------:|-------|------------------------|
-| 0.80 – 1.00 | Very Bullish | Strong beats, raised guidance, new growth catalysts |
-| 0.60 – 0.79 | Positive | Solid execution, constructive outlook |
-| 0.40 – 0.59 | Neutral / Mixed | Balancing positives with acknowledged headwinds |
-| 0.20 – 0.39 | Bearish | Misses, cost pressures, restructuring language |
-| 0.00 – 0.19 | Very Bearish | Crisis-level negativity, material warnings |
 
 ---
 
