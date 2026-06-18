@@ -172,3 +172,4 @@ ORDER BY QUARTER ASC
 - documentsectionname = 'Total' captures the full-call aggregate; use 'CFO' or 'Question' for section-level analysis
 - eventcategorygroup = 'Aggregate Weighted Score' provides the headline sentiment metric weighted by importance
 - Each earnings call may produce multiple rows per signal type; always AVG() and GROUP BY calldate for the chart
+- Have only the chart and the bullet point summaries in the output, nothing else. Remain concise and professional
